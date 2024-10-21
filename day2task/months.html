@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <script>
+        var a=+prompt("enter number between 0 to 11")
+        var str=["January","Febraury","March","April","May","June","July","August","September","October","November","December"]
+
+        for (let i = 0; i < str.length; i++) {
+
+            if(a==i){
+
+                console.log(str[i]);
+                break;
+            }
+            else if (a>str.length-1) {
+                
+                console.log("enter the valid number");
+            }
+        }
+
+    </script>
+</body>
+</html>

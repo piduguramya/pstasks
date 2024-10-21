@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        // Give a number find the previous prime of that number
+        // eg:11 output:7
+
+
+        let a=+prompt("enter any number")
+         for (let i = a-1; i >1; i--) {
+            var isprime=true;
+
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+
+                // For example, consider 36. Its factors are 1, 2, 3, 4, 6, 9, 12, 18, 36. Beyond 6 (the square root of 36),
+                //  any factor can be paired with one below 6 (e.g., 36 = 6 * 6, 36 = 4 * 9, etc.).
+                
+                if (i%j==0) {
+                  var isprime=false;
+                  break;
+                    
+                }
+            }
+            if (isprime==true){
+                console.log(i);
+                break;
+
+            } 
+         }
+
+    </script>
+</body>
+</html>

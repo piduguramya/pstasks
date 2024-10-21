@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+// Check the given number is palindrome or not.
+
+     var a=+prompt("enter any number with atleast 2 digits")
+     str=a.toString();
+       
+      for (let i = 0; i < str.length/2; i++) {
+
+        if (str[i]==str[str.length-1-i]) {
+            var ispalindrome=true;   
+        }   
+        else{
+            
+            var ispalindrome=false;  
+            break;
+        }
+    }
+    
+    if (ispalindrome) {
+        console.log(a+" is a palindrome");
+    } 
+    else {
+        console.log(a+" is not a palindrome");
+    }
+    </script>
+</body>
+</html>

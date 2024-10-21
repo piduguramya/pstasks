@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+    // Compare two arrays and arrays elements  give output if it's or true or false.
+
+    let a1=prompt("enter the 1st array elements with spaces and no quotatios")
+    let arr1 = a1.split(' ').map(String);
+
+    let a2=prompt("enter the 2nd array elements with spaces and no quotatios")
+    let arr2 = a2.split(' ').map(String);
+
+    if (arr1.length==arr2.length) {
+        
+        for (let i = 0; i < arr1.length; i++) {
+    
+                if (arr1[i]==arr2[i]) {
+                    var issame=true
+                    
+                } 
+                else {
+                    var issame=false
+                    
+                }
+                
+            }
+            
+        if (issame) {
+            console.log(issame); 
+        }
+        else{
+            console.log(issame);
+            
+        }
+    }
+    else {
+        
+        console.log("numbers of elements in the array is different");
+        
+    }
+
+
+
+    </script>
+</body>
+</html>
